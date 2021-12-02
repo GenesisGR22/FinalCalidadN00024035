@@ -1,0 +1,252 @@
+{
+  "id": "6c4aedcb-beb6-4947-b5f9-fd85d1b22d42",
+  "version": "2.0",
+  "name": "PruebasSelenium",
+  "url": "https://localhost:44398/",
+  "tests": [{
+    "id": "91db1798-a6a3-4bf3-83b9-50770187af47",
+    "name": "TestCrearCuenta",
+    "commands": [{
+      "id": "1ce02e2f-f295-4fdd-8419-d3ba0015c939",
+      "comment": "",
+      "command": "open",
+      "target": "https://localhost:44398/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "e87b5792-0bfd-44c5-b57a-93ccac802408",
+      "comment": "",
+      "command": "click",
+      "target": "id=goCuentas",
+      "targets": [
+        ["id=goCuentas", "id"],
+        ["linkText=Cuentas", "linkText"],
+        ["css=#goCuentas", "css:finder"],
+        ["xpath=//a[contains(text(),'Cuentas')]", "xpath:link"],
+        ["xpath=//a[@id='goCuentas']", "xpath:attributes"],
+        ["xpath=//a[contains(@href, '/Cuenta')]", "xpath:href"],
+        ["xpath=//li/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Cuentas')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "92994cd8-7047-40ad-a077-be9d3b1a533c",
+      "comment": "",
+      "command": "click",
+      "target": "id=agregarNuevaCuenta",
+      "targets": [
+        ["id=agregarNuevaCuenta", "id"],
+        ["css=#agregarNuevaCuenta", "css:finder"],
+        ["xpath=//a[@id='agregarNuevaCuenta']", "xpath:attributes"],
+        ["xpath=//a[contains(@href, '/Cuenta/Create')]", "xpath:href"],
+        ["xpath=//div[2]/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "a77d71dc-721c-4a9a-8632-a16ade700085",
+      "comment": "",
+      "command": "click",
+      "target": "id=Nombre",
+      "targets": [
+        ["id=Nombre", "id"],
+        ["name=Nombre", "name"],
+        ["css=#Nombre", "css:finder"],
+        ["xpath=//input[@id='Nombre']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "ab69e799-336f-4038-a0d7-828ff56f4cff",
+      "comment": "",
+      "command": "type",
+      "target": "id=Nombre",
+      "targets": [
+        ["id=Nombre", "id"],
+        ["name=Nombre", "name"],
+        ["css=#Nombre", "css:finder"],
+        ["xpath=//input[@id='Nombre']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "Cuenta Prueba 2"
+    }, {
+      "id": "77a7abff-93dc-42c8-89c6-0b70f2255e80",
+      "comment": "",
+      "command": "click",
+      "target": "id=Categoria",
+      "targets": [
+        ["id=Categoria", "id"],
+        ["name=Categoria", "name"],
+        ["css=#Categoria", "css:finder"],
+        ["xpath=//select[@id='Categoria']", "xpath:attributes"],
+        ["xpath=//select", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "95728455-1028-444d-bfac-618440ee93c7",
+      "comment": "",
+      "command": "select",
+      "target": "id=Categoria",
+      "targets": [],
+      "value": "label=Crédito"
+    }, {
+      "id": "c6d0ae01-c428-47c9-ae68-cad43c1e231c",
+      "comment": "",
+      "command": "click",
+      "target": "id=Monto",
+      "targets": [
+        ["id=Monto", "id"],
+        ["name=Monto", "name"],
+        ["css=#Monto", "css:finder"],
+        ["xpath=//input[@id='Monto']", "xpath:attributes"],
+        ["xpath=//div[3]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "c2c7a66c-2f08-4863-9eb2-3a61ac9fb455",
+      "comment": "",
+      "command": "type",
+      "target": "id=Monto",
+      "targets": [
+        ["id=Monto", "id"],
+        ["name=Monto", "name"],
+        ["css=#Monto", "css:finder"],
+        ["xpath=//input[@id='Monto']", "xpath:attributes"],
+        ["xpath=//div[3]/input", "xpath:position"]
+      ],
+      "value": "5000"
+    }, {
+      "id": "9b59f54e-1bc0-4459-a12e-5fc53df74bc9",
+      "comment": "",
+      "command": "click",
+      "target": "id=crearCuenta",
+      "targets": [
+        ["id=crearCuenta", "id"],
+        ["css=#crearCuenta", "css:finder"],
+        ["xpath=//input[@id='crearCuenta']", "xpath:attributes"],
+        ["xpath=//div[4]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "a55cbce8-236f-4cac-9493-5398966dc801",
+      "comment": "",
+      "command": "click",
+      "target": "css=tr:nth-child(4) > td:nth-child(1)",
+      "targets": [
+        ["css=tr:nth-child(4) > td:nth-child(1)", "css:finder"],
+        ["xpath=//table[@id='datatable']/tbody/tr[4]/td", "xpath:idRelative"],
+        ["xpath=//tr[4]/td", "xpath:position"],
+        ["xpath=//td[contains(.,'Cuenta Prueba')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "b71606f3-73b8-40a3-badc-b89fa7ed8d08",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=tr:nth-child(4) > td:nth-child(1)",
+      "targets": [
+        ["css=tr:nth-child(4) > td:nth-child(1)", "css:finder"],
+        ["xpath=//table[@id='datatable']/tbody/tr[4]/td", "xpath:idRelative"],
+        ["xpath=//tr[4]/td", "xpath:position"],
+        ["xpath=//td[contains(.,'Cuenta Prueba')]", "xpath:innerText"]
+      ],
+      "value": "Cuenta Prueba"
+    }, {
+      "id": "3d2ef524-f52e-4457-ba60-ce376316b489",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "575caf92-7c3b-455b-9c8f-fb7154973a32",
+    "name": "TestListarCuentas",
+    "commands": [{
+      "id": "9502f313-636d-4813-b406-94d10de682d0",
+      "comment": "",
+      "command": "open",
+      "target": "https://localhost:44398/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "69e33915-457c-4f2f-a05e-b0ecbc91ccd4",
+      "comment": "",
+      "command": "click",
+      "target": "css=.display-4",
+      "targets": [
+        ["css=.display-4", "css:finder"],
+        ["xpath=//h1", "xpath:position"],
+        ["xpath=//h1[contains(.,'Welcome')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "0189b430-291f-4108-8e41-3e9e5ec2314f",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.display-4",
+      "targets": [
+        ["css=.display-4", "css:finder"],
+        ["xpath=//h1", "xpath:position"],
+        ["xpath=//h1[contains(.,'Welcome')]", "xpath:innerText"]
+      ],
+      "value": "Welcome"
+    }, {
+      "id": "16aef152-d72b-4145-b906-ee816d7395d8",
+      "comment": "",
+      "command": "click",
+      "target": "id=goCuentas",
+      "targets": [
+        ["id=goCuentas", "id"],
+        ["linkText=Cuentas", "linkText"],
+        ["css=#goCuentas", "css:finder"],
+        ["xpath=//a[contains(text(),'Cuentas')]", "xpath:link"],
+        ["xpath=//a[@id='goCuentas']", "xpath:attributes"],
+        ["xpath=//a[contains(@href, '/Cuenta')]", "xpath:href"],
+        ["xpath=//li/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Cuentas')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "e7dc5251-bf3c-4d38-a55d-61897e1e5a1e",
+      "comment": "",
+      "command": "click",
+      "target": "css=.thead-dark td:nth-child(1)",
+      "targets": [
+        ["css=.thead-dark td:nth-child(1)", "css:finder"],
+        ["xpath=//table[@id='datatable']/thead/tr/td", "xpath:idRelative"],
+        ["xpath=//td", "xpath:position"],
+        ["xpath=//td[contains(.,'Nombre')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "c50dfa87-04b8-468a-b693-f9ec2f40e033",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.thead-dark td:nth-child(1)",
+      "targets": [
+        ["css=.thead-dark td:nth-child(1)", "css:finder"],
+        ["xpath=//table[@id='datatable']/thead/tr/td", "xpath:idRelative"],
+        ["xpath=//td", "xpath:position"],
+        ["xpath=//td[contains(.,'Nombre')]", "xpath:innerText"]
+      ],
+      "value": "Nombre"
+    }, {
+      "id": "5834da55-5e53-4619-be19-ec1d2b2b0d39",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "45468741-bd83-41df-b38c-eaf37b45aafa",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["91db1798-a6a3-4bf3-83b9-50770187af47"]
+  }],
+  "urls": ["https://localhost:44398/"],
+  "plugins": []
+}

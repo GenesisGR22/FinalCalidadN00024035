@@ -1,0 +1,290 @@
+{
+  "id": "285bed1c-f814-4573-b426-c4f401903992",
+  "version": "2.0",
+  "name": "TestIngresos",
+  "url": "https://localhost:44398/",
+  "tests": [{
+    "id": "c2975654-82d1-46cb-b610-ca394720ec31",
+    "name": "TestListarIngresos",
+    "commands": [{
+      "id": "793808d9-522d-4e24-952d-3b99a1a57032",
+      "comment": "",
+      "command": "open",
+      "target": "https://localhost:44398/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "72af0903-bac6-443d-bde7-34526988f371",
+      "comment": "",
+      "command": "click",
+      "target": "id=goIngresos",
+      "targets": [
+        ["id=goIngresos", "id"],
+        ["linkText=Ingresos", "linkText"],
+        ["css=#goIngresos", "css:finder"],
+        ["xpath=//a[contains(text(),'Ingresos')]", "xpath:link"],
+        ["xpath=//a[@id='goIngresos']", "xpath:attributes"],
+        ["xpath=//a[contains(@href, '/Ingresos')]", "xpath:href"],
+        ["xpath=//li[3]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Ingresos')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "c2e86ad2-bd84-48e5-8a0f-1ecfb2a3c7b9",
+      "comment": "",
+      "command": "click",
+      "target": "css=.thead-dark td:nth-child(1)",
+      "targets": [
+        ["css=.thead-dark td:nth-child(1)", "css:finder"],
+        ["xpath=//table[@id='datatable']/thead/tr/td", "xpath:idRelative"],
+        ["xpath=//td", "xpath:position"],
+        ["xpath=//td[contains(.,'Cuenta')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "d641d130-dc84-4588-a94c-fbc9296a2296",
+      "comment": "",
+      "command": "click",
+      "target": "css=.thead-dark td:nth-child(1)",
+      "targets": [
+        ["css=.thead-dark td:nth-child(1)", "css:finder"],
+        ["xpath=//table[@id='datatable']/thead/tr/td", "xpath:idRelative"],
+        ["xpath=//td", "xpath:position"],
+        ["xpath=//td[contains(.,'Cuenta')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "8b3f20c9-ac51-485a-b616-d8b0b51d00d7",
+      "comment": "",
+      "command": "click",
+      "target": "css=.thead-dark td:nth-child(1)",
+      "targets": [
+        ["css=.thead-dark td:nth-child(1)", "css:finder"],
+        ["xpath=//table[@id='datatable']/thead/tr/td", "xpath:idRelative"],
+        ["xpath=//td", "xpath:position"],
+        ["xpath=//td[contains(.,'Cuenta')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "63e97037-86c5-4078-b9da-4f923327a81e",
+      "comment": "",
+      "command": "doubleClick",
+      "target": "css=.thead-dark td:nth-child(1)",
+      "targets": [
+        ["css=.thead-dark td:nth-child(1)", "css:finder"],
+        ["xpath=//table[@id='datatable']/thead/tr/td", "xpath:idRelative"],
+        ["xpath=//td", "xpath:position"],
+        ["xpath=//td[contains(.,'Cuenta')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "654d6563-6ebe-49a3-8c84-3f1ce1f006ac",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.thead-dark td:nth-child(1)",
+      "targets": [
+        ["css=.thead-dark td:nth-child(1)", "css:finder"],
+        ["xpath=//table[@id='datatable']/thead/tr/td", "xpath:idRelative"],
+        ["xpath=//td", "xpath:position"],
+        ["xpath=//td[contains(.,'Cuenta')]", "xpath:innerText"]
+      ],
+      "value": "Cuenta"
+    }, {
+      "id": "cf3b3778-df01-4037-ae94-b6b928c75932",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "35821455-cb85-4db4-aacc-695c8ba5badb",
+    "name": "TestGuardarIngresos",
+    "commands": [{
+      "id": "619f5af8-df0d-4a37-b6e2-85f00c1dc3df",
+      "comment": "",
+      "command": "open",
+      "target": "https://localhost:44398/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "c9069d58-87f4-4fea-85ae-e9647701a998",
+      "comment": "",
+      "command": "click",
+      "target": "id=goIngresos",
+      "targets": [
+        ["id=goIngresos", "id"],
+        ["linkText=Ingresos", "linkText"],
+        ["css=#goIngresos", "css:finder"],
+        ["xpath=//a[contains(text(),'Ingresos')]", "xpath:link"],
+        ["xpath=//a[@id='goIngresos']", "xpath:attributes"],
+        ["xpath=//a[contains(@href, '/Ingresos')]", "xpath:href"],
+        ["xpath=//li[3]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Ingresos')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "ec9f847e-164d-4153-9919-6452ea4e21e5",
+      "comment": "",
+      "command": "click",
+      "target": "id=agregarNuevoIngreso",
+      "targets": [
+        ["id=agregarNuevoIngreso", "id"],
+        ["css=#agregarNuevoIngreso", "css:finder"],
+        ["xpath=//a[@id='agregarNuevoIngreso']", "xpath:attributes"],
+        ["xpath=//a[contains(@href, '/Ingresos/Create')]", "xpath:href"],
+        ["xpath=//div[2]/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "e40e08c5-c5e6-4887-bb2e-ea80525b66e2",
+      "comment": "",
+      "command": "click",
+      "target": "id=CuentaId",
+      "targets": [
+        ["id=CuentaId", "id"],
+        ["name=CuentaId", "name"],
+        ["css=#CuentaId", "css:finder"],
+        ["xpath=//select[@id='CuentaId']", "xpath:attributes"],
+        ["xpath=//select", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "211a12ae-32f2-43ee-87e9-8e3593d04db2",
+      "comment": "",
+      "command": "select",
+      "target": "id=CuentaId",
+      "targets": [],
+      "value": "label=BBVA"
+    }, {
+      "id": "95ae1d28-a155-47d3-a2b0-2748cf2be22a",
+      "comment": "",
+      "command": "click",
+      "target": "id=Descripcion",
+      "targets": [
+        ["id=Descripcion", "id"],
+        ["name=Descripcion", "name"],
+        ["css=#Descripcion", "css:finder"],
+        ["xpath=//input[@id='Descripcion']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "d134956e-0756-46f3-920d-e2a2ff03d45d",
+      "comment": "",
+      "command": "type",
+      "target": "id=Descripcion",
+      "targets": [
+        ["id=Descripcion", "id"],
+        ["name=Descripcion", "name"],
+        ["css=#Descripcion", "css:finder"],
+        ["xpath=//input[@id='Descripcion']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "Pago Mensual"
+    }, {
+      "id": "75db6f88-a721-477c-97c4-5e3f636d84d4",
+      "comment": "",
+      "command": "click",
+      "target": "id=Monto",
+      "targets": [
+        ["id=Monto", "id"],
+        ["name=Monto", "name"],
+        ["css=#Monto", "css:finder"],
+        ["xpath=//input[@id='Monto']", "xpath:attributes"],
+        ["xpath=//div[3]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "b197bb0f-2147-4186-a530-a8e450b582d6",
+      "comment": "",
+      "command": "type",
+      "target": "id=Monto",
+      "targets": [
+        ["id=Monto", "id"],
+        ["name=Monto", "name"],
+        ["css=#Monto", "css:finder"],
+        ["xpath=//input[@id='Monto']", "xpath:attributes"],
+        ["xpath=//div[3]/input", "xpath:position"]
+      ],
+      "value": "1500"
+    }, {
+      "id": "cca3a313-7fe6-4ad7-b826-ef320af1d2d1",
+      "comment": "",
+      "command": "click",
+      "target": "id=registrarIngresos",
+      "targets": [
+        ["id=registrarIngresos", "id"],
+        ["css=#registrarIngresos", "css:finder"],
+        ["xpath=//input[@id='registrarIngresos']", "xpath:attributes"],
+        ["xpath=//div[4]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "d3bf2823-6a0c-454b-a493-81802f140802",
+      "comment": "",
+      "command": "click",
+      "target": "css=.thead-dark td:nth-child(1)",
+      "targets": [
+        ["css=.thead-dark td:nth-child(1)", "css:finder"],
+        ["xpath=//table[@id='datatable']/thead/tr/td", "xpath:idRelative"],
+        ["xpath=//td", "xpath:position"],
+        ["xpath=//td[contains(.,'Cuenta')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "9c7c5d79-4617-40c0-8354-51f14386c2b4",
+      "comment": "",
+      "command": "click",
+      "target": "css=.thead-dark td:nth-child(1)",
+      "targets": [
+        ["css=.thead-dark td:nth-child(1)", "css:finder"],
+        ["xpath=//table[@id='datatable']/thead/tr/td", "xpath:idRelative"],
+        ["xpath=//td", "xpath:position"],
+        ["xpath=//td[contains(.,'Cuenta')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "7cedfc89-cc7e-4df0-acd2-82767f1d3665",
+      "comment": "",
+      "command": "doubleClick",
+      "target": "css=.thead-dark td:nth-child(1)",
+      "targets": [
+        ["css=.thead-dark td:nth-child(1)", "css:finder"],
+        ["xpath=//table[@id='datatable']/thead/tr/td", "xpath:idRelative"],
+        ["xpath=//td", "xpath:position"],
+        ["xpath=//td[contains(.,'Cuenta')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "86d38605-dda8-4641-8c13-19f490a3ff34",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.thead-dark td:nth-child(1)",
+      "targets": [
+        ["css=.thead-dark td:nth-child(1)", "css:finder"],
+        ["xpath=//table[@id='datatable']/thead/tr/td", "xpath:idRelative"],
+        ["xpath=//td", "xpath:position"],
+        ["xpath=//td[contains(.,'Cuenta')]", "xpath:innerText"]
+      ],
+      "value": "Cuenta"
+    }, {
+      "id": "d5eefe15-71bc-40e5-8794-5ea04b389966",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "227293af-c33d-4c4e-a2e1-6dbd1096a373",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["c2975654-82d1-46cb-b610-ca394720ec31"]
+  }],
+  "urls": ["https://localhost:44398/"],
+  "plugins": []
+}
